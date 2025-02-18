@@ -13,7 +13,16 @@
 const buttonEl = document.querySelector("button");
 const lightOnEl = document.querySelector(".on");
 const lightOffEl = document.querySelector(".off");
+
 buttonEl.addEventListener("click", function () {
-  lightOffEl.classList.add("disappear");
-  lightOnEl.classList.remove("disappear");
+  if (buttonEl.innerText.includes("Accendi")) {
+    lightOffEl.classList.add("disappear");
+    lightOnEl.classList.remove("disappear");
+    buttonEl.innerText = "Spegni";
+  } else {
+    lightOffEl.classList.remove("disappear");
+    lightOffEl.classList.add("show");
+    lightOnEl.classList.add("disappear");
+    buttonEl.innerText = "Accendi";
+  }
 });
