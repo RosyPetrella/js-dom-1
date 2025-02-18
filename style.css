@@ -1,0 +1,26 @@
+img {
+    height: 300px;
+}
+
+button {
+    padding: 0.75rem;
+    background-color: white;
+    border-radius: 1rem;
+    border: 0.75px solid grey;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* .on {
+    display: none;
+} */
+/* Utilities */
+
+.show {
+    display: block;
+}
+
+.disappear {
+    display: none;
+}
